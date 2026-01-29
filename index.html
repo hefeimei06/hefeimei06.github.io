@@ -38,16 +38,16 @@
     .profile-table td {
       display: block !important;
       width: 100% !important;
-      max-width: 100% !important; /* 强制覆盖原本的30% */
-      text-align: center !important; /* 让自我介绍的文字居中 */
+      max-width: 100% !important;
+      text-align: center !important;
       padding: 10px !important;
     }
-    /* 专门修饰头像 */
+
     .profile-table img {
       width: 150px !important; /* 头像大小 */
       max-width: 60% !important;
-      margin: 0 auto 10px auto !important; /* 居中，且在下方留出空隙 */
-      border-radius: 80%; /* 圆形头像 */
+      margin: 0 auto 1px auto !important;
+      border-radius: 90%; /* 圆形头像 */
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
@@ -56,18 +56,15 @@
        保持左右排列，但通过减小边距和撑大图片来放大校徽
        ============================== */
     .edu-table td {
-      /* 关键1：减小内边距。从原本的20px减小到左右5px，腾出空间 */
       padding: 15px 5px !important; 
     }
     
-    /* 专门针对校徽所在的左侧单元格调整宽度 */
     .edu-table td:first-child {
-       width: 25% !important; /* 保持原本的宽度比例，或者稍微加大到 30% */
-       min-width: 80px !important; /* 保证校徽列有一个最小宽度，不会被挤得太小 */
+       width: 25% !important;
+       min-width: 80px !important;
     }
 
     .edu-table img {
-      /* 关键2：原本HTML里写了width="70%"，这里强制改为100%填满单元格 */
       width: 100% !important; 
       margin: 0 auto;
     }
